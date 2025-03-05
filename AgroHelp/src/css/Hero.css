@@ -1,0 +1,232 @@
+/* Ensure all sections within the content remain readable */
+.hero-title {
+  font-size: 7rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add text shadow for visibility */
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+  margin-top: -60px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for hero buttons */
+.hero-button {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+.simple-text-section {
+  margin-top: 50px;
+  padding: 30px;
+  /* Optional background for better contrast */
+  border-radius: 10px;
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+  margin: 0;
+  background-color: #fbe9d0;
+  padding-top: 80px; /* Ensure content is below any fixed header */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heading {
+  text-align: center; /* Align content horizontally */
+  max-width: 10000px; /* Constrain the width for readability */
+  margin: 80px; /* Center-align horizontally */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Transparent overlay */
+/* .hero::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1; 
+} */
+
+
+/* Ensure hero content is above the overlay */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Flickering animation for the title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00245e;
+  background: linear-gradient(90deg, #00245e, #0066cc, #00aaff, #00245e); /* Gradient colors */
+  background-size: 300% 100%; /* Extend the gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 6s linear infinite; /* Continuous flowing animation */
+}
+
+@keyframes flow {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 300% 50%; /* Complete one cycle */
+  }
+}
+
+
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Description styling */
+.hero-description {
+  font-size: 1.5rem; /* Increase font size for better readability */
+  color: #874F41;
+  margin-top: 20px; /* Add spacing from title */
+  margin-bottom: 30px; /* Add spacing before buttons */
+  line-height: 1.8; /* Increase line height for better readability */
+  text-align: center; /* Center-align the text */
+  width: 100%; /* Ensure it spans across the container */
+}
+
+/* Styling for buttons container */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button styling with jump animation */
+/* Button styling with images */
+/* Button styling with images */
+.hero-button {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: contain; /* Ensure the image fits without being cut */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fbe9d0; /* Fallback color for empty space */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px rgba(1, 1, 1, 0.5); /* Subtle glow */
+}
+
+.hero-button:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Button text */
+.hero-button-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Adding smooth animation on hover */
+.hero-button:hover .hero-button-title {
+  animation: jump 1s infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(-50%, 0%);
+  }
+  50% {
+    transform: translate(-50%, -10%);
+  }
+  100% {
+    transform: translate(-50%, 0%);
+  }
+}
+
+
+
+.simple-text-section {
+  margin-top: 250px; /* Space above the text section */
+  padding: 50px; /* Add some padding for content spacing */
+  max-width: 800px; /* Limit the width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Align text naturally to the left */
+}
+
+.simple-text-section h1 {
+  font-size: 2.5rem;
+  color: #00245e;
+  margin-bottom: 15px;
+}
+
+.simple-text-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+h7{
+  color: #244855;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}

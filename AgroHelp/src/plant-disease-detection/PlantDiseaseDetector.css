@@ -1,0 +1,97 @@
+/* Apply background color to the entire page */
+html, body {
+  background-color: #FBE9D0;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: add a font for the page */
+  color: #874F41;
+  height: 100%; /* Ensure it covers the full height */
+}
+.image-preview {
+  margin-top: 20px;
+  text-align: center;
+}
+.image-preview img {
+  max-width: 100%;
+  max-height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+ 
+  /* Style for the container that holds the form */
+  .container {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: #e4bd85; /* Match the background color */
+}
+  
+  .form{
+    background-color: #FBE9D0;
+
+  }
+  /* Style for the form container */
+  .form-container {
+    margin-top: 20px;
+    color: #874F41;
+}
+  
+  /* Style for the button */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .label{
+    color: #874F41;
+  }
+  
+
+
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Message container for prediction or error */
+  .message {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #FBE9D0;
+  }
+  
+  /* Specific color for prediction message */
+  .prediction {
+    color: green;
+  }
+  
+  /* Specific color for error message */
+  .error {
+    color: red;
+  }
+  
+  h4{
+    color: #01384c;
+    font-size: 50px;
+  }
+
+
+p1{
+      color: #e64833;
+      background-color: #FBE9D0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(175, 45, 45, 0.1);
+      text-align: left;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 150px; /* Adjust height as needed */
+      margin-top: 20px;
+    }

@@ -1,0 +1,59 @@
+
+/* Reset body and html to ensure full-width layout */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%; /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  background-color: #fff9e6; /* Cream background */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Trickshot', sans-serif; /* Set the font family */
+}
+
+.header {
+  background-color: #244855; /* Dark blue background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and title */
+  padding: 10px 20px;
+  border-bottom: 2px solid #d4d4d4;
+  width: 100%; /* Ensure header takes full width */
+  cursor: pointer;
+  box-sizing: border-box; /* Prevent overflow */
+  position: fixed; /* Fix header at top */
+  top: 0; /* Align header at the top */
+  z-index: 10; /* Make sure header is above other content */
+}
+
+/* To prevent content from being hidden behind the header, add padding to the top of the page */
+body {
+  padding-top: 60px; /* Adjust this value based on the height of your header */
+}
+
+.logo {
+  width: 80px; /* Adjust the size of the logo */
+  height: auto;
+  margin-right: 15px; /* Space between logo and title */
+}
+
+.title {
+  color: #fff9e6;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center; /* Center the title text */
+  flex-grow: 1; /* Allow title to take up available space and center itself */
+}
+
+.language-selector select {
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
