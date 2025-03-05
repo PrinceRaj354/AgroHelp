@@ -55,6 +55,18 @@ npm run server
 npm start
 ```
 
+## 🔹 Add Your Gemini API Key  
+
+Add your **Gemini API Key** in the following files:  
+
+- **`firebaseConfig.jsx`**  
+  📌 Path: `AgroHelp/AgroHelp/src/service/firebaseConfig.jsx`  
+
+- **`AIModal.jsx`**  
+  📌 Path: `AgroHelp/AgroHelp/src/service/AIModal.jsx`  
+
+⚠️ **Keep your API key secure** by using environment variables instead of hardcoding it.
+
 ##  How to Use
 1️⃣ **Sign up or log in** to access the platform.
 2️⃣ **Enter soil details** to receive AI-driven crop recommendations.
