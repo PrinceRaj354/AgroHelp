@@ -1,49 +1,53 @@
-"# plant-disease-detection" 
-# AgroHelp
+# 🌱 AgroHelp - Your Smart Agriculture Assistant
 
-AgroHelp is an agriculture consultant platform designed to assist farmers with expert advice, real-time data, and resource management to improve productivity and sustainability.
+AgroHelp is a cutting-edge agriculture consultancy platform designed to empower farmers with expert guidance, real-time insights, and AI-driven solutions to boost productivity and sustainability.
 
-## Features
-- **Expert Consultation**: Connect with agricultural experts for personalized guidance.
-- **Crop Recommendations**: AI-based crop selection based on soil type, weather, and location.
-- **Weather Insights**: Real-time weather updates for better farming decisions.
-- **Market Prices**: Live market price tracking for various crops.
-- **Community Forum**: A space for farmers to share experiences and solutions.
-- **Disease Detection**: Upload images of crops to detect diseases using AI models.
+##  Key Features
+-  **Expert Consultation** – Connect with agricultural specialists for personalized guidance.
+-  **AI-Powered Crop Selection** – Smart recommendations based on soil type, weather, and location.
+-  **Live Weather Updates** – Get real-time weather insights for better decision-making.
+-  **Market Price Tracker** – Stay updated on live crop prices.
+-  **Farmer Community Forum** – Share experiences and solutions with fellow farmers.
+-  **AI Disease Detection** – Detect plant diseases by uploading crop images.
 
-## Tech Stack
-- **Frontend**: React.js
-- **Backend**: Node.js, Express.js, Python (Flask for AI model integration)
-- **Database**: MongoDB
-- **Authentication**: JWT-based authentication
-- **AI & ML**: AI models for crop prediction and disease detection
+##  Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js, Python (Flask for AI model integration)
+- **Database:** MongoDB
+- **Authentication:** JWT-based authentication
+- **AI/ML:** AI-driven crop recommendations and disease detection
 
-## Project Structure
+##  Project Structure
 ```
 AgroHelp/
-│── .git/
-│── .vscode/
-│── AgroHelp/                # Main project folder
-│── uploads/                 # Directory for storing uploaded images
-│── venv/                    # Virtual environment for Python dependencies
-│── app.py                   # Backend script for AI model inference
-│── best_model.keras         # Keras model for disease detection
-│── cmrit_model.pth          # PyTorch model for disease detection
+│── .git/                    # Version control
+│── .vscode/                 # Editor configuration
+│── AgroHelp/                # Main project directory
+│── uploads/                 # Directory for image uploads
+│── venv/                    # Virtual environment for dependencies
+│── app.py                   # Backend for AI model processing
+│── best_model.keras         # AI model (Keras) for disease detection
+│── cmrit_model.pth          # AI model (PyTorch) for disease detection
 │── README.md                # Project documentation
 ```
 
-## Installation
-```bash
+##  Getting Started
+### 1️⃣ Installation
+```sh
 # Clone the repository
-git clone https://github.com/PrinceRaj354/AgroHelp.git
+git clone <repository-url>
 
-# Navigate to project directory
+# Navigate to the project folder
 cd AgroHelp
 
-# Install dependencies for frontend and backend
-npm install  # For frontend
-pip install -r requirements.txt  # For Python backend
+# Install frontend dependencies
+npm install 
 
+# Install Python backend dependencies
+pip install -r requirements.txt
+```
+### 2️⃣ Running the Application
+```sh
 # Start the backend server
 npm run server
 
@@ -51,29 +55,24 @@ npm run server
 npm start
 ```
 
-## Usage
-1. Sign up or log in to access features.
-2. Enter soil details for AI-driven crop recommendations.
-3. View weather updates and market prices.
-4. Consult experts or participate in the community forum.
-5. Upload an image of your crop to detect diseases using AI models.
+##  How to Use
+1️⃣ **Sign up or log in** to access the platform.
+2️⃣ **Enter soil details** to receive AI-driven crop recommendations.
+3️⃣ **Check live weather updates and market prices** to make informed farming decisions.
+4️⃣ **Engage with experts or farmers** in the community forum.
+5️⃣ **Upload crop images** for AI-powered disease detection.
 
-## Running the Disease Detection Model
-- Ensure the `uploads/` directory exists for image uploads.
-- Run the AI model backend using:
-```bash
+##  Running the Disease Detection Model
+Ensure the `uploads/` directory is created. Then, run:
+```sh
 python app.py
 ```
-- The API will process the uploaded image and return disease predictions.
+The backend will analyze the image and return disease predictions.
 
-## Accessing the Disease Detection Model
-To access the AI model for disease detection, follow this [Google Drive link](#) (replace with actual link).
+## 🔗 Access AI Disease Detection Models
+Download the AI models from the links below:
+- 📌 [Keras Model](https://drive.google.com/file/d/1rzkLE0V8QbIfexuF9cvYGf8n1Hw1LVc7/view?usp=drive_link)
+- 📌 [PyTorch Model](https://drive.google.com/file/d/1j8u84LM6SEw_CN1tAjoyPi78mM0Ulc3R/view?usp=drive_link)
 
-## Contributing
-Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For queries, reach out at [your email] or visit our website at [project website].
+##  License
+This project is licensed under the **MIT License**.
