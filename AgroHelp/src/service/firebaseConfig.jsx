@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCtpbYh7BiRBNx2Z9iUJVAS1UPpSStGthI",
+  apiKey: "YOUR_GEMINI_API_KEY",
   authDomain: "travel-planner-f2191.firebaseapp.com",
   projectId: "travel-planner-f2191",
   storageBucket: "travel-planner-f2191.firebasestorage.app",
@@ -25,7 +25,7 @@ export const db = getFirestore(app);
 // import { getFirestore, collection } from "firebase/firestore";
 
 // const firebaseConfig = {
-//   apiKey: "AIzaSyCtpbYh7BiRBNx2Z9iUJVAS1UPpSStGthI",
+//   apiKey: "YOUR_GEMINI_API_KEY",
 //   authDomain: "travel-planner-f2191.firebaseapp.com",
 //   projectId: "travel-planner-f2191",
 //   storageBucket: "travel-planner-f2191.firebasestorage.app",
